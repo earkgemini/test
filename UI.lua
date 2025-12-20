@@ -2309,7 +2309,9 @@ yensignCircle='rbxassetid://121345638639744',yensignSquare=
 zlButtonRoundedtopHorizontal='rbxassetid://126115161459047',
 zrButtonRoundedtopHorizontal='rbxassetid://107608277098590',zzz=
 'rbxassetid://137515429343264'}end 
---- UI Colors
+
+---------------------Colors UI---------------------
+
 function a.g()
 local b=a.load'd'
 local c=b.Value
@@ -2328,7 +2330,7 @@ return {
         PrimaryAccent=d('FFFFFF',38)
     },
     Accents={
-        Red=d('FF453A',100)
+        Red=d('FF004D',100)
     },
     Controls={
         Background=d('1C1C1E',100),
@@ -2339,10 +2341,10 @@ return {
         Exit=d('FF5F57',100),
         Minimize=d('FEBC2E',100),
         Zoom=d('28C840',100),
-        SwitchAccent=d('478CF6',100),
-        Selection=d('007AFF',100),
-        SelectionStroke=d('007AFF',60),
-        SelectionFocused=d('0A82FF',100),
+        SwitchAccent=d('FF004D',100), -- Red
+        Selection=d('FF004D',100), -- Red
+        SelectionStroke=d('FF004D',60), -- Red
+        SelectionFocused=d('FF004D',100), -- Red
         SelectionFocusedAccent=d('FFFFFF',85),
         Sidebar=d('202023',84),
         Separator={Background=d('000000',50),Shadow=d('FFFFFF',0)},
@@ -2356,13 +2358,13 @@ return {
             Knob=d('FFFFFF',100),
             KnobEffects=d('FFFFFF',100),
             SwitchOff=d('7a7a7a',40),
-            SwitchOn=d('478cf6',100),
+            SwitchOn=d('478cf6',100), -- Blue (Changed)
             DepthEffect=c(ColorSequence.new{ColorSequenceKeypoint.new(0,Color3.fromRGB(225,225,225)),ColorSequenceKeypoint.new(0.68,Color3.fromRGB(255,255,255)),ColorSequenceKeypoint.new(1,Color3.fromRGB(255,255,255))})
         },
         Slider={
             Track=d('2C2C2E',100),
             TrackEffects=d('000000',10),
-            TrackFill=d('478CF6',100),
+            TrackFill=d('FF004D',100), -- Red
             Thumb=d('FFFFFF',100),
             ThumbStroke=d('000000',20),
             ThumbEffects=d('FFFFFF',80)
@@ -2370,7 +2372,7 @@ return {
         Button={
             Shadow=c(Color3.fromRGB(0,0,0)),
             FillPrimary=c(ColorSequence.new{
-                ColorSequenceKeypoint.new(0,Color3.fromRGB(72,148,255)),
+                ColorSequenceKeypoint.new(0,Color3.fromRGB(72,148,255)), -- Blue Gradient (Changed)
                 ColorSequenceKeypoint.new(1,Color3.fromRGB(10,110,255))
             }),
             FillSecondary=c(ColorSequence.new{
@@ -2418,7 +2420,7 @@ return {
         PrimaryAccent=d('4D4D4D',100)
     },
     Accents={
-        Red=d('FF3B30',100)
+        Red=d('FF004D',100) -- Fixed to Theme Red
     },
     Controls={
         Background=d('FFFFFF',100),
@@ -2429,10 +2431,10 @@ return {
         Exit=d('FF5F57',100),
         Minimize=d('FEBC2E',100),
         Zoom=d('28C840',100),
-        SwitchAccent=d('478CF6',100), -- Blue
-        Selection=d('007AFF',100), -- Blue
-        SelectionStroke=d('007AFF',50), -- Blue
-        SelectionFocused=d('0A82FF',100), -- Blue
+        SwitchAccent=d('FF004D',100), -- Fixed to Theme Red
+        Selection=d('FF004D',100), -- Fixed to Theme Red
+        SelectionStroke=d('FF004D',50), -- Fixed to Theme Red
+        SelectionFocused=d('FF004D',100), -- Fixed to Theme Red
         SelectionFocusedAccent=d('FFFFFF',85),
         Sidebar=d('EAEAEA',84),
         Separator={Background=d('000000',18),Shadow=d('000000',10)},
@@ -2446,13 +2448,16 @@ return {
             Knob=d('FFFFFF',100),
             KnobEffects=d('FFFFFF',100),
             SwitchOff=d('000000',9),
-            SwitchOn=d('478CF6',100), -- Blue
+            SwitchOn=d('478cf6',100), -- Blue (Changed)
             DepthEffect=c(ColorSequence.new{ColorSequenceKeypoint.new(0,Color3.fromRGB(225,225,225)),ColorSequenceKeypoint.new(0.68,Color3.fromRGB(255,255,255)),ColorSequenceKeypoint.new(1,Color3.fromRGB(255,255,255))})
         },
         Slider={
             Track=d('000000',5),
             TrackEffects=d('000000',0),
-            TrackFill=d('478CF6',100), -- EXPLICITLY Added Blue Fill
+            -- TrackFill=d('FF004D',100), -- Optional: If user wanted consistency. I'll omit to default to Theme Red as per "don't adjust" or let it inherit? 
+            -- Actually, to be safe and consistent with "Red Theme", I should set it to Red if standard, OR implied Blue if standard logic prevails. 
+            -- User said "Red Red Red" except Button/Toggle. So implied Slider is Red.
+             TrackFill=d('FF004D',100),
             Thumb=d('FFFFFF',100),
             ThumbStroke=d('000000',2),
             ThumbEffects=d('FFFFFF',100)
@@ -2460,7 +2465,7 @@ return {
         Button={
             Shadow=c(Color3.new(0,0,0)),
             FillPrimary=c(ColorSequence.new{
-                ColorSequenceKeypoint.new(0,Color3.fromRGB(43,145,255)), -- Blue Gradient
+                ColorSequenceKeypoint.new(0,Color3.fromRGB(43,145,255)), -- Blue Gradient (Changed)
                 ColorSequenceKeypoint.new(1,Color3.fromRGB(0,122,255))
             }),
             FillSecondary=c(ColorSequence.new{
@@ -2490,8 +2495,7 @@ return {
 }
 end
 
-
---- End of UI Colors
+---------------------End UI---------------------
 
 function a.h()
 local b=a.load'd'
