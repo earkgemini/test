@@ -2328,7 +2328,7 @@ return {
         PrimaryAccent=d('FFFFFF',38)
     },
     Accents={
-        Red=d('FF453A',100) -- Reverted to Standard Red
+        Red=d('FF453A',100)
     },
     Controls={
         Background=d('1C1C1E',100),
@@ -2339,10 +2339,10 @@ return {
         Exit=d('FF5F57',100),
         Minimize=d('FEBC2E',100),
         Zoom=d('28C840',100),
-        SwitchAccent=d('478CF6',100), -- Reverted to Blue
-        Selection=d('007AFF',100), -- Reverted to Blue
-        SelectionStroke=d('007AFF',60), -- Reverted to Blue
-        SelectionFocused=d('0A82FF',100), -- Reverted to Blue
+        SwitchAccent=d('478CF6',100),
+        Selection=d('007AFF',100),
+        SelectionStroke=d('007AFF',60),
+        SelectionFocused=d('0A82FF',100),
         SelectionFocusedAccent=d('FFFFFF',85),
         Sidebar=d('202023',84),
         Separator={Background=d('000000',50),Shadow=d('FFFFFF',0)},
@@ -2356,13 +2356,13 @@ return {
             Knob=d('FFFFFF',100),
             KnobEffects=d('FFFFFF',100),
             SwitchOff=d('7a7a7a',40),
-            SwitchOn=d('478cf6',100), -- Reverted to Blue
+            SwitchOn=d('478cf6',100),
             DepthEffect=c(ColorSequence.new{ColorSequenceKeypoint.new(0,Color3.fromRGB(225,225,225)),ColorSequenceKeypoint.new(0.68,Color3.fromRGB(255,255,255)),ColorSequenceKeypoint.new(1,Color3.fromRGB(255,255,255))})
         },
         Slider={
             Track=d('2C2C2E',100),
             TrackEffects=d('000000',10),
-            TrackFill=d('478CF6',100), -- Reverted to Blue
+            TrackFill=d('478CF6',100),
             Thumb=d('FFFFFF',100),
             ThumbStroke=d('000000',20),
             ThumbEffects=d('FFFFFF',80)
@@ -2370,7 +2370,7 @@ return {
         Button={
             Shadow=c(Color3.fromRGB(0,0,0)),
             FillPrimary=c(ColorSequence.new{
-                ColorSequenceKeypoint.new(0,Color3.fromRGB(72,148,255)), -- Reverted to Blue Gradient
+                ColorSequenceKeypoint.new(0,Color3.fromRGB(72,148,255)),
                 ColorSequenceKeypoint.new(1,Color3.fromRGB(10,110,255))
             }),
             FillSecondary=c(ColorSequence.new{
@@ -2418,7 +2418,7 @@ return {
         PrimaryAccent=d('4D4D4D',100)
     },
     Accents={
-        Red=d('FF3B30',100) -- Reverted to Standard Red
+        Red=d('FF3B30',100)
     },
     Controls={
         Background=d('FFFFFF',100),
@@ -2429,10 +2429,10 @@ return {
         Exit=d('FF5F57',100),
         Minimize=d('FEBC2E',100),
         Zoom=d('28C840',100),
-        SwitchAccent=d('478CF6',100), -- Reverted to Blue
-        Selection=d('007AFF',100), -- Reverted to Blue
-        SelectionStroke=d('007AFF',50), -- Reverted to Blue
-        SelectionFocused=d('0A82FF',100), -- Reverted to Blue
+        SwitchAccent=d('478CF6',100), -- Blue
+        Selection=d('007AFF',100), -- Blue
+        SelectionStroke=d('007AFF',50), -- Blue
+        SelectionFocused=d('0A82FF',100), -- Blue
         SelectionFocusedAccent=d('FFFFFF',85),
         Sidebar=d('EAEAEA',84),
         Separator={Background=d('000000',18),Shadow=d('000000',10)},
@@ -2446,21 +2446,21 @@ return {
             Knob=d('FFFFFF',100),
             KnobEffects=d('FFFFFF',100),
             SwitchOff=d('000000',9),
-            SwitchOn=d('478cf6',100), -- Reverted to Blue
+            SwitchOn=d('478CF6',100), -- Blue
             DepthEffect=c(ColorSequence.new{ColorSequenceKeypoint.new(0,Color3.fromRGB(225,225,225)),ColorSequenceKeypoint.new(0.68,Color3.fromRGB(255,255,255)),ColorSequenceKeypoint.new(1,Color3.fromRGB(255,255,255))})
         },
         Slider={
             Track=d('000000',5),
             TrackEffects=d('000000',0),
+            TrackFill=d('478CF6',100), -- EXPLICITLY Added Blue Fill
             Thumb=d('FFFFFF',100),
             ThumbStroke=d('000000',2),
             ThumbEffects=d('FFFFFF',100)
-            -- TrackFill removed/defaulted as per original
         },
         Button={
             Shadow=c(Color3.new(0,0,0)),
             FillPrimary=c(ColorSequence.new{
-                ColorSequenceKeypoint.new(0,Color3.fromRGB(43,145,255)), -- Reverted to Blue Gradient
+                ColorSequenceKeypoint.new(0,Color3.fromRGB(43,145,255)), -- Blue Gradient
                 ColorSequenceKeypoint.new(1,Color3.fromRGB(0,122,255))
             }),
             FillSecondary=c(ColorSequence.new{
@@ -2489,6 +2489,7 @@ return {
     }
 }
 end
+
 
 --- End of UI Colors
 
